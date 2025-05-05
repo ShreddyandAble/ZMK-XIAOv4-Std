@@ -84,7 +84,7 @@
 	<&zip_temp_layer 3 500>;
     };
 //left hand trackball
-    trackball_peripheral_listener: trackball_peripheral_listener {
+    trackball_peripheral_listener: trackball_peripheral_listener1 {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_peripheral_split1>;
