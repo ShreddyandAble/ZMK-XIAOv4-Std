@@ -1,17 +1,14 @@
 #include "skreecustom.dtsi"
 
-/ {
-     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
-   };
-
-  mock_kscan: mock_kscan_0 {
-    compatible = "zmk,kscan-mock";
-    columns = <0>;
-    rows = <0>;
-    events = <0>;
-  };
+&kscan0 {
+	col-gpios
+		= <&pro_micro 14 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 15 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 18 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 19 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 20 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 21 GPIO_ACTIVE_HIGH>
+		;
 };
 
 &trackball_listener {
