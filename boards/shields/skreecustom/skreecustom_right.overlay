@@ -34,10 +34,13 @@
 };
 
 // Overrides for the input-split child node
-&trackball_peripheral_split {
-    device = <&trackball_peripheral>;
+&trackball_split { 
+	device = <&trackball>;
 };
 
+&trackball_split2 {
+  status = "disabled";
+};
 
 nice_view_spi: &spi2 {
     compatible = "nordic,nrf-spim";
