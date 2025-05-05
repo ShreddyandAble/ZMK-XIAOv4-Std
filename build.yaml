@@ -22,5 +22,7 @@ include:
     shield: skreecustom_left nice_view_adapter nice_view
   - board: seeeduino_xiao_ble
     shield: skreecustom_right nice_view_adapter nice_view
+  - board: seeeduino_xiao_ble
+    shield: skreecustom_dongle
 #  - board: seeeduino_xiao_ble
 #    shield: settings_reset 
