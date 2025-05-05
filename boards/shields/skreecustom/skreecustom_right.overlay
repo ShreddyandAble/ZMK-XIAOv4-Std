@@ -33,6 +33,10 @@
     };
 };
 
+&spi1 {
+  status = "okay";
+};
+
 // Overrides for the input-split child node
 &trackball_split { 
 	device = <&trackball>;

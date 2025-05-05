@@ -12,10 +12,6 @@
         ;
 };
 
-&trackball_peripheral_listener {
-    status = "okay";
-};
-
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 &spi1 {
     cs-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
@@ -31,6 +27,10 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
     };
+};
+
+&spi1 {
+  status = "okay";
 };
 
 // Overrides for the input listener node
