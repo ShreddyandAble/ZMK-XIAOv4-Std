@@ -1,8 +1,9 @@
 #include "skreecustom.dtsi"
 
 / {
-  chosen {
-    zmk,kscan = &mock_kscan;
+     chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
    };
 
   mock_kscan: mock_kscan_0 {
