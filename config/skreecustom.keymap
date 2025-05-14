@@ -12,6 +12,29 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        Eduardo: Eduardo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(E) &kp D &kp U &kp A &kp R &kp D &kp O>;
+            label = "EDUARDO";
+        };
+
+        VPCS202011: VPCS202011 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(V) &kp LS(P) &kp LS(C) &kp LS(S) &kp N2 &kp N0 &kp N2 &kp N0 &kp EXCL &kp EXCL>;
+            label = "VPCS202011";
+        };
+
+        VPCS2020111: VPCS2020111 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(V) &kp LS(P) &kp LS(C) &kp LS(S) &kp N2 &kp N0 &kp N2 &kp N0 &kp EXCL &kp EXCL &kp EXCL>;
+            label = "VPCS2020111";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -26,10 +49,10 @@
 
         Arrows {
             bindings = <
-&trans             &trans            &trans        &trans             &trans           &trans  &kp HOME         &kp UP_ARROW  &kp END    &trans
-&trans             &kp LC(LG(LEFT))  &kp RG(D)     &kp RG(LC(RIGHT))  &trans           &trans  &kp LEFT         &kp DOWN      &kp RIGHT  &trans
-&kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE    &kp LG(PERIOD)     &trans           &trans  &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &trans
-                                     &kp CAPSLOCK  &kp PAGE_UP        &kp PAGE_DOWN    &trans  &trans           &kp DEL
+&trans             &kp RG(LEFT)      &kp RG(UP_ARROW)  &kp RG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW  &kp END    &trans
+&trans             &kp LC(LG(LEFT))  &kp RG(D)         &kp RG(LC(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN      &kp RIGHT  &trans
+&kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE        &kp LG(PERIOD)     &trans           &trans    &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &trans
+                                     &kp CAPSLOCK      &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &kp DEL
             >;
         };
 
