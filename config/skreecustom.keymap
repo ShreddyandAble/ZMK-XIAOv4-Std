@@ -50,7 +50,7 @@
         Arrows {
             bindings = <
 &trans             &kp RG(LEFT)      &kp RG(UP_ARROW)  &kp RG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW  &kp END    &trans
-&trans             &kp LC(LG(LEFT))  &kp RG(D)         &kp RG(LC(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN      &kp RIGHT  &trans
+&trans             &kp LC(LG(LEFT))  &kp RG(D)         &kp RG(LC(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN      &kp RIGHT  &kp MINUS
 &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE        &kp LG(PERIOD)     &trans           &trans    &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &trans
                                      &kp CAPSLOCK      &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &kp DEL
             >;
