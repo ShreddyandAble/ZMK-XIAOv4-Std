@@ -76,10 +76,10 @@
 
         Tabs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+&kp LC(NUMBER_1)  &kp RC(NUMBER_2)  &kp RC(NUMBER_3)  &kp RC(NUMBER_4)  &kp RC(N5)    &kp RC(NUMBER_6)  &kp RC(N7)  &kp RC(N8)  &kp RC(N9)  &kp RC(N0)
+&trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
+                                    &trans            &kp LC(ENTER)     &trans        &trans            &trans      &trans
             >;
         };
     };
