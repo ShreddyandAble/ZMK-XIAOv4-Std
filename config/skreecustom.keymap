@@ -35,19 +35,28 @@
 
         Numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+&kp NUMBER_1  &kp NUMBER_2  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
+                &trans  &trans  &trans    &mkp MB1  &mkp MB2  &trans
             >;
         };
 
         Tabs {
             bindings = <
-&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
-&trans            &trans            &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
-&trans            &trans            &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
-                                    &trans  &trans  &trans    &mkp MB1  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
