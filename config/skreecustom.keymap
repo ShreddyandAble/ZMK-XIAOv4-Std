@@ -26,10 +26,10 @@
 
         Arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp UP_ARROW  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans     &trans
-                &trans  &trans  &trans    &trans  &trans    &trans
+&trans             &trans            &trans      &trans             &trans           &trans  &kp HOME         &kp UP_ARROW  &kp END    &trans
+&trans             &kp LC(LG(LEFT))  &kp RG(D)   &kp RG(LC(RIGHT))  &trans           &trans  &kp LEFT         &kp DOWN      &kp RIGHT  &trans
+&kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE  &kp LG(PERIOD)     &trans           &trans  &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &trans
+                                     &trans      &kp PAGE_UP        &kp PAGE_DOWN    &trans  &trans           &trans
             >;
         };
 
