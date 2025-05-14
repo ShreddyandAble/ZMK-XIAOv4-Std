@@ -17,14 +17,23 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-              &kp N1  &kp N2  &kp N3    &kp N4  &kp N5  &kp N6
+&kp Q  &kp W  &kp E       &kp R        &kp T                   &kp Y                      &kp U        &kp I       &kp O    &kp P
+&kp A  &kp S  &kp D       &kp F        &kp G                   &kp H                      &kp J        &kp K       &kp L    &kp SEMI
+&kp Z  &kp X  &kp C       &kp V        &kp B                   &kp N                      &kp M        &kp COMMA   &kp DOT  &kp FSLH
+              &kp K_BACK  &lt 2 ENTER  &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 1 SPACE  &kp ESCAPE
             >;
         };
 
-        layer_1 {
+        Arrows {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp UP_ARROW  &kp END    &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans     &trans
+                &trans  &trans  &trans    &trans  &trans    &trans
+            >;
+        };
+
+        Numbers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -33,21 +42,12 @@
             >;
         };
 
-        layer_2 {
+        Tabs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
-                &trans  &trans  &trans    &mkp MB1  &mkp MB2  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
+&trans            &trans            &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
+&trans            &trans            &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans
+                                    &trans  &trans  &trans    &mkp MB1  &mkp MB2  &trans
             >;
         };
     };
