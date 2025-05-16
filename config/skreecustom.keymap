@@ -12,6 +12,29 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        Eduardo: Eduardo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(E) &kp D &kp U &kp A &kp R &kp D &kp O>;
+            label = "EDUARDO";
+        };
+
+        VPCS202011: VPCS202011 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(V) &kp LS(P) &kp LS(C) &kp LS(S) &kp N2 &kp N0 &kp N2 &kp N0 &kp EXCL &kp EXCL>;
+            label = "VPCS202011";
+        };
+
+        VPCS2020111: VPCS2020111 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(V) &kp LS(P) &kp LS(C) &kp LS(S) &kp N2 &kp N0 &kp N2 &kp N0 &kp EXCL &kp EXCL &kp EXCL>;
+            label = "VPCS2020111";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -26,10 +49,10 @@
 
         Arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+&trans        &kp RG(LEFT_ARROW)  &kp RG(UP_ARROW)  &kp LG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &trans
+&trans        &kp LC(LG(LEFT))    &kp LG(D)         &kp LC(LG(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&kp C_VOL_DN  &kp C_VOL_UP        &kp K_MUTE        &kp RG(PERIOD)     &trans           &trans    &kp LC(LS(TAB))  &kp LC(TAB)     &trans     &trans
+                                  &kp CAPSLOCK      &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &kp DELETE
             >;
         };
 
