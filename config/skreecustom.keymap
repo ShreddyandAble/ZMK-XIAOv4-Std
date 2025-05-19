@@ -40,28 +40,28 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E               &kp R        &kp T                   &kp Y                     &kp U        &kp I       &kp O    &kp P
-&kp A  &kp S  &kp D               &lt 4 F      &kp G                   &kp H                     &lt 4 J      &kp K       &kp L    &kp APOS
-&kp Z  &kp X  &kp C               &kp V        &kp B                   &kp N                     &kp M        &kp COMMA   &kp DOT  &kp FSLH
-              &kp RA(LEFT_ARROW)  &lt 2 ENTER  &mt LEFT_CONTROL TAB    &mt LEFT_SHIFT BACKSPACE  &lt 1 SPACE  &kp ESCAPE
+&kp Q  &kp W  &kp E       &kp R        &kp T                   &kp Y                     &kp U        &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D       &lt 4 F      &kp G                   &kp H                     &lt 4 J      &kp K      &kp L    &kp APOS
+&kp Z  &kp X  &kp C       &kp V        &kp B                   &kp N                     &kp M        &kp COMMA  &kp DOT  &kp FSLH
+              &kp ESCAPE  &lt 2 ENTER  &mt LEFT_CONTROL TAB    &mt LEFT_SHIFT BACKSPACE  &lt 1 SPACE  &kp DEL
             >;
         };
 
         Arrows {
             bindings = <
-&trans        &kp RG(LEFT_ARROW)  &kp RG(UP_ARROW)  &kp LG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &trans
-&trans        &kp LC(LG(LEFT))    &kp LG(D)         &kp LC(LG(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
-&kp C_VOL_DN  &kp C_VOL_UP        &kp K_MUTE        &kp RG(PERIOD)     &trans           &trans    &kp LC(LS(TAB))  &kp LC(TAB)     &trans     &trans
-                                  &kp CAPSLOCK      &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &kp DELETE
+&trans        &kp RG(LEFT_ARROW)  &kp RG(UP_ARROW)    &kp LG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &trans
+&trans        &kp LC(LG(LEFT))    &kp LG(D)           &kp LC(LG(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&kp C_VOL_DN  &kp C_VOL_UP        &kp C_MUTE          &kp RG(PERIOD)     &kp CAPSLOCK     &trans    &kp LC(LS(TAB))  &kp LC(TAB)     &trans     &trans
+                                  &kp RA(LEFT_ARROW)  &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &trans
             >;
         };
 
         Numbers {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5    &kp NUMBER_6  &kp N7          &kp N8      &kp N9         &sk N0
-&kp EQUAL     &kp PLUS      &kp TILDE     &kp HASH        &trans    &trans        &kp UNDERSCORE  &kp COLON   &kp SEMICOLON  &kp MINUS
-&trans        &trans        &msc SCRL_UP  &msc SCRL_DOWN  &trans    &trans        &trans          &trans      &trans         &trans
-                            &kp CAPSLOCK  &trans          &trans    &trans        &trans          &kp DELETE
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp N7          &kp N8     &kp N9         &kp N0
+&kp EQUAL     &kp PLUS      &kp TILDE     &kp HASH      &trans          &trans        &kp UNDERSCORE  &kp COLON  &kp SEMICOLON  &kp MINUS
+&trans        &trans        &trans        &trans        &kp CAPSLOCK    &trans        &trans          &trans     &trans         &trans
+                            &kp RA(LEFT)  &trans        &trans          &trans        &trans          &trans
             >;
         };
 
@@ -77,7 +77,7 @@
         Tabs {
             bindings = <
 &kp RC(NUMBER_1)  &kp RC(NUMBER_2)  &kp RC(NUMBER_3)  &kp RC(NUMBER_4)  &kp RC(N5)    &kp RC(NUMBER_6)  &kp RC(N7)  &kp RC(N8)  &kp RC(N9)  &kp RC(N0)
-&trans            &trans            &mkp MB1          &trans            &trans        &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
 &trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
                                     &trans            &kp LC(ENTER)     &trans        &trans            &trans      &trans
             >;
