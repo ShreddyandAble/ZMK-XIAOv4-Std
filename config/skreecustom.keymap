@@ -50,8 +50,8 @@
 
         Arrows {
             bindings = <
-&trans        &kp RG(LEFT_ARROW)  &kp RG(D)    &kp LG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &trans
-&trans        &kp LC(LG(LEFT))    &kp LG(TAB)  &kp LC(LG(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&bt BT_SEL 0  &kp RG(LEFT_ARROW)  &kp RG(D)    &kp LG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &bt BT_CLR
+&bt BT_SEL 1  &kp LC(LG(LEFT))    &kp LG(TAB)  &kp LC(LG(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
 &kp C_VOL_DN  &kp C_VOL_UP        &kp C_MUTE   &kp RG(PERIOD)     &kp CAPSLOCK     &trans    &kp LC(LS(TAB))  &kp LC(TAB)     &trans     &trans
                                   &trans       &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &trans
             >;
@@ -59,9 +59,9 @@
 
         Numbers {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4        &kp N5          &kp NUMBER_6  &kp N7          &kp N8        &kp N9         &kp N0
-&kp EQUAL     &kp PLUS      &kp TILDE     &kp HASH            &trans          &trans        &kp UNDERSCORE  &kp COLON     &kp SEMICOLON  &kp MINUS
-&trans        &trans        &trans        &kp RA(LEFT_ARROW)  &kp CAPSLOCK    &trans        &trans          &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_CLR
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4        &kp N5          &kp NUMBER_6  &kp N7          &kp N8     &kp N9         &kp N0
+&kp EQUAL     &kp PLUS      &kp TILDE     &kp HASH            &trans          &trans        &kp UNDERSCORE  &kp COLON  &kp SEMICOLON  &kp MINUS
+&trans        &trans        &trans        &kp RA(LEFT_ARROW)  &kp CAPSLOCK    &trans        &trans          &trans     &trans         &trans
                             &trans        &trans              &trans          &trans        &trans          &trans
             >;
         };
