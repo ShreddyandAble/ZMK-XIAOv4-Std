@@ -34,6 +34,13 @@
             bindings = <&none &kp LS(V) &kp LS(P) &kp LS(C) &kp LS(S) &kp N2 &kp N0 &kp N2 &kp N0 &kp EXCL &kp EXCL &kp EXCL &kp ENTER>;
             label = "VPCS2020111";
         };
+
+        MacPW: MacPW {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N0 &kp N0 &kp N0 &kp N0 &kp RET>;
+            label = "MACPW";
+        };
     };
 
     keymap {
