@@ -50,10 +50,10 @@
 
         Arrows {
             bindings = <
-&trans        &kp RG(LEFT_ARROW)  &kp RG(D)    &kp LG(RIGHT)      &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &trans
-&trans        &kp LC(LG(LEFT))    &kp LG(TAB)  &kp LC(LG(RIGHT))  &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
-&kp C_VOL_DN  &kp C_VOL_UP        &kp C_MUTE   &kp RG(PERIOD)     &kp CAPSLOCK     &trans    &kp LC(LS(TAB))  &kp LC(TAB)     &trans     &trans
-                                  &trans       &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &trans
+&trans        &kp RG(LC(LEFT_ARROW))  &kp RG(D)         &kp LG(RC(RIGHT))  &VPCS2020111     &trans    &kp HOME         &kp UP_ARROW    &kp END    &trans
+&trans        &kp LG(LEFT)            &kp LG(UP_ARROW)  &kp LG(RIGHT)      &VPCS202011      &Eduardo  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&kp C_VOL_DN  &kp C_VOL_UP            &kp C_MUTE        &kp RG(LC(SPACE))  &kp CAPSLOCK     &trans    &kp LS(LG(TAB))  &kp LG(TAB)     &trans     &trans
+                                      &trans            &kp PAGE_UP        &kp PAGE_DOWN    &trans    &trans           &trans
             >;
         };
 
