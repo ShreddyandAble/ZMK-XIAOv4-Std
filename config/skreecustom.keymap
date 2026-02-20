@@ -12,6 +12,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        VPCS202011: VPCS202011 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(V) &kp LS(P) &kp LS(C) &kp LS(S) &kp N2 &kp N0 &kp N2 &kp N0 &kp EXCL &kp EXCL &kp RET>;
+            label = "VPCS202011";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,12 +48,12 @@
 
         Arrows {
             bindings = <
-&trans  &trans  &kp K_PREV              &kp K_NEXT       &kp K_PLAY_PAUSE   &trans       &trans       &trans           &trans        &trans     &trans  &trans
-&trans  &trans  &kp RG(LEFT_ARROW)      &kp RG(D)        &kp RG(RIGHT)      &trans       &trans       &kp HOME         &kp UP_ARROW  &kp END    &trans  &trans
-&trans  &trans  &kp RC(RG(LEFT_ARROW))  &kp RG(TAB)      &kp RC(RG(RIGHT))  &trans       &trans       &kp LEFT         &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &trans  &kp K_VOLUME_DOWN       &kp K_VOLUME_UP  &kp K_MUTE         &trans       &kp DEL      &kp RS(RC(TAB))  &kp LC(TAB)   &trans     &trans  &trans
-                                        &trans           &kp PG_UP          &kp PG_DN    &bootloader  &trans           &trans
-                                        &trans           &trans             &trans       &trans       &trans           &trans
+&trans  &trans  &kp K_PREV              &kp K_NEXT       &kp K_PLAY_PAUSE   &trans         &trans       &trans           &trans        &trans     &trans  &trans
+&trans  &trans  &kp RG(LEFT_ARROW)      &kp RG(D)        &kp RG(RIGHT)      &trans         &trans       &kp HOME         &kp UP_ARROW  &kp END    &trans  &trans
+&trans  &trans  &kp RC(RG(LEFT_ARROW))  &kp RG(TAB)      &kp RC(RG(RIGHT))  &VPCS202011    &trans       &kp LEFT         &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &trans  &kp K_VOLUME_DOWN       &kp K_VOLUME_UP  &kp K_MUTE         &trans         &kp DEL      &kp RS(RC(TAB))  &kp LC(TAB)   &trans     &trans  &trans
+                                        &trans           &kp PG_UP          &kp PG_DN      &bootloader  &trans           &trans
+                                        &trans           &trans             &trans         &trans       &trans           &trans
             >;
         };
     };
