@@ -48,12 +48,12 @@
 
         Arrows {
             bindings = <
-&trans  &trans  &kp K_PREV              &kp K_NEXT       &kp K_PLAY_PAUSE   &trans         &trans   &trans           &trans        &trans     &trans              &trans
-&trans  &trans  &kp RG(LEFT_ARROW)      &kp RG(D)        &kp RG(RIGHT)      &trans         &trans   &kp HOME         &kp UP_ARROW  &kp END    &trans              &trans
-&trans  &trans  &kp RC(RG(LEFT_ARROW))  &kp RG(TAB)      &kp RC(RG(RIGHT))  &VPCS202011    &trans   &kp LEFT         &kp DOWN      &kp RIGHT  &trans              &trans
-&trans  &trans  &kp K_VOLUME_DOWN       &kp K_VOLUME_UP  &kp K_MUTE         &trans         &kp DEL  &kp RS(RC(TAB))  &kp LC(TAB)   &trans     &kp RA(LEFT_ARROW)  &kp RA(LEFT_ARROW)
-                                        &trans           &kp PG_UP          &kp PG_DN      &trans   &trans           &trans
-                                        &trans           &trans             &trans         &trans   &trans           &trans
+&trans  &none  &kp K_PREV              &kp K_NEXT       &kp K_PLAY_PAUSE   &none          &trans   &none            &none         &none         &none               &trans
+&trans  &none  &kp RG(LEFT_ARROW)      &kp RG(D)        &kp RG(RIGHT)      &none          &none    &kp HOME         &kp UP_ARROW  &kp END       &none               &trans
+&trans  &none  &kp RC(RG(LEFT_ARROW))  &kp RG(TAB)      &kp RC(RG(RIGHT))  &VPCS202011    &none    &kp LEFT         &kp DOWN      &kp RIGHT     &none               &trans
+&trans  &none  &kp K_VOLUME_DOWN       &kp K_VOLUME_UP  &kp K_MUTE         &none          &kp DEL  &kp RS(RC(TAB))  &kp LC(TAB)   &kp RA(LEFT)  &kp RA(LEFT_ARROW)  &kp RA(LEFT_ARROW)
+                                       &trans           &kp PG_UP          &kp PG_DN      &trans   &trans           &trans
+                                       &trans           &trans             &trans         &trans   &trans           &trans
             >;
         };
     };
