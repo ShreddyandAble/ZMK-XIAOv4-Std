@@ -25,12 +25,12 @@
 
         default_layer {
             bindings = <
-&mt LEFT_SHIFT EQUAL     &kp N1  &kp N2  &kp N3         &kp N4        &kp N5            &kp N6                    &kp N7       &kp N8        &kp N9   &kp N0     &mt LEFT_SHIFT MINUS
-&mkp LCLK                &kp Q   &kp W   &kp E          &kp R         &kp T             &kp Y                     &kp U        &kp I         &kp O    &kp P      &kp TILDE
-&mt LEFT_SHIFT CAPSLOCK  &kp A   &kp S   &kp D          &kp F         &kp G             &kp H                     &kp J        &kp K         &kp L    &kp COLON  &kp SQT
-&mt LCTRL RG(PERIOD)     &kp Z   &kp X   &kp C          &kp V         &kp B             &kp N                     &kp M        &kp COMMA     &kp DOT  &kp FSLH   &kp RCTRL
-                                         &kp BACKSPACE  &lt 1 ENTER   &mt LCTRL TAB     &mt LEFT_SHIFT BACKSPACE  &lt 2 SPACE  &kp DELETE
-                                         &kp ESCAPE     &kp UP_ARROW  &kp DOWN_ARROW    &kp LEFT_ARROW            &kp RIGHT    &kp RA(LEFT)
+&mt LEFT_SHIFT EQUAL     &kp N1  &kp N2  &kp N3         &kp N4       &kp N5           &kp N6                    &kp N7       &kp N8      &kp N9   &kp N0     &mt LEFT_SHIFT MINUS
+&mkp LCLK                &kp Q   &kp W   &kp E          &kp R        &kp T            &kp Y                     &kp U        &kp I       &kp O    &kp P      &kp TILDE
+&mt LEFT_SHIFT CAPSLOCK  &kp A   &kp S   &kp D          &kp F        &kp G            &kp H                     &kp J        &kp K       &kp L    &kp COLON  &kp SQT
+&mt LCTRL RG(PERIOD)     &kp Z   &kp X   &kp C          &kp V        &kp B            &kp N                     &kp M        &kp COMMA   &kp DOT  &kp FSLH   &kp RCTRL
+                                         &kp BACKSPACE  &lt 1 ENTER  &mt LCTRL TAB    &mt LEFT_SHIFT BACKSPACE  &lt 2 SPACE  &kp DELETE
+                                         &kp UP_ARROW   &kp DOWN     &kp ESCAPE       &kp LA(LEFT_ARROW)        &kp LEFT     &kp RIGHT
             >;
         };
 
